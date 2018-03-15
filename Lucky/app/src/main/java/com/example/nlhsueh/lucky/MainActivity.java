@@ -35,6 +35,26 @@ public class MainActivity extends AppCompatActivity {
     public void fn_goNextAct (View view) {
         Intent intent = new Intent(MainActivity.this, Main2Activity.class);
         intent.putExtra("n", luckyNumber);
-        startActivity(intent);
+        startActivityForResult(intent, 111);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (data == null)
+            return;
+
+        super.onActivityResult(requestCode, resultCode, data);
+
+        switch (requestCode) {
+            case 111:
+                int like = data.getIntExtra("Like",1);
+                if (like == 1) {
+                    tv_hello.setText("Happy~~");
+                }
+                else {
+                    tv_hello.setText("Try again!");
+                }
+                break;
+        }
     }
 }
