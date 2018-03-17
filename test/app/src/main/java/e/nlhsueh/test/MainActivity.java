@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fn_web(View v) {
-        Uri u = Uri.parse("http://www.openedu.tw");
+        Uri u = Uri.parse("http://www.google.com");
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
         intent.setData(u);
