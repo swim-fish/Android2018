@@ -7,53 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ba72b9e-088c-466e-890a-b1c26eb38183" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/.idea/gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/Chapter3_HelloWorld.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/HelloWorld.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/app.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/proguard-rules.pro" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/androidTest/java/lincyu/helloworld/ApplicationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/java/lincyu/helloworld/MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/drawable/chihyu2012.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/layout/activity_button.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/layout/activity_imageview.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/layout/activity_linearlayout.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/layout/activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/layout/activity_original.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/layout/activity_relativelayout.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/layout/activity_tablelayout.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/layout/activity_textview.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/layout/activity_textview2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/menu/menu_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/values-ja/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/values-zh-rTW/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/values/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/values/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/app/src/main/res/values/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/gradle.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Chapter3_HelloWorld/settings.gradle" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ImplicitActDemo/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ImplicitActDemo/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1931,7 +1886,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521297303275" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521297534086" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2031,7 +1986,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521297303276" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521297534086" />
       </method>
     </configuration>
     <list size="1">
@@ -2086,6 +2041,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1878" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
