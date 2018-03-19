@@ -1,6 +1,7 @@
 package com.example.nlhsueh.lucky;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -56,4 +57,12 @@ public class Main2Activity extends AppCompatActivity {
         finish();
     }
 
+    public void fn_googleFlower(View view) {
+        Uri uri = Uri.parse(
+                "http://www.google.com.tw/search?q=lucky flower");
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(uri);
+        startActivity(intent);
+    }
 }
