@@ -22,12 +22,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tv_hello = findViewById(R.id.tv_hello);
         btn_go = findViewById(R.id.btn_go);
+        Log.i("LIFECYCLE", "Create");
     }
+
 
     public void fn_showLuckyNumber (View view) {
         Random r = new Random();
         luckyNumber = r.nextInt(6)+1;
-        Log.i("random ", Integer.toString(luckyNumber));
+        Log.v("random ", Integer.toString(luckyNumber));
         btn_go.setEnabled(true);
         tv_hello.setText(Integer.toString(luckyNumber));
     }
@@ -56,5 +58,35 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
         }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("LIFECYCLE", "Start");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("LIFECYCLE", "Resume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("LIFECYCLE", "Pause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("LIFECYCLE", "Stop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("LIFECYCLE", "Destroy");
     }
 }
