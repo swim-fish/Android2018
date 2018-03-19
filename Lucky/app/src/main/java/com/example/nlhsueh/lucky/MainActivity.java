@@ -59,34 +59,4 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.i("LIFECYCLE", "Start");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i("LIFECYCLE", "Resume");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.i("LIFECYCLE", "Pause");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.i("LIFECYCLE", "Stop");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.i("LIFECYCLE", "Destroy");
-    }
 }

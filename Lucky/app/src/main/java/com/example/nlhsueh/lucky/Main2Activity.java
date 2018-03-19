@@ -56,13 +56,4 @@ public class Main2Activity extends AppCompatActivity {
         setResult(RESULT_OK, i);
         finish();
     }
-
-    public void fn_googleFlower(View view) {
-        Uri uri = Uri.parse(
-                "http://www.google.com.tw/search?q=lucky flower");
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.setData(uri);
-        startActivity(intent);
-    }
 }
