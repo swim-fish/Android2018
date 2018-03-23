@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
+import android.content.Intent;
 
 
 public class MainActivity extends ListActivity {
@@ -70,6 +71,10 @@ public class MainActivity extends ListActivity {
 //                click_item, Toast.LENGTH_LONG).show();
 
         Toast.makeText(getApplicationContext(),  food + ":" + place, Toast.LENGTH_LONG).show();
+        Intent intent1 = new Intent(v.getContext(), DetailedActivity.class);
+        intent1.putExtra("food", food);
+        intent1.putExtra("place", place);
+        startActivityForResult(intent1,0);
 
 
 
