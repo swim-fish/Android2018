@@ -59,4 +59,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
+//    @Override
+//    protected void onClick(Bundle savedInstanceState){
+//        super.onClick(savedInstanceState);
+//        Log.i("LIFECycle", "onClick");
+//    }
 }
