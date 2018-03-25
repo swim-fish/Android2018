@@ -10,15 +10,22 @@ import android.view.View;
 import java.util.HashMap;
 import java.util.ArrayList;
 import android.widget.SimpleAdapter;
+import android.widget.BaseAdapter;
 import android.widget.Toast;
+import android.widget.TextView;
+import android.view.ViewGroup;
 import android.content.Intent;
+import android.view.LayoutInflater;
+import android.content.Context;
 
 
 public class MainActivity extends ListActivity {
 
-    ArrayList<HashMap<String,String>> list = new ArrayList<HashMap<String,String>>();
+    ArrayList<HashMap<String,String>> data_list = new ArrayList<HashMap<String,String>>();
 
-    private SimpleAdapter adapter;
+//    private SimpleAdapter adapter;
+    YourAdapter adapter = null;
+    ListView listview;
 
     private static final String[] mPlaces = new String[] {
             "台北市", "新北市", "台南市", "高雄市", "苗粟縣",
@@ -40,29 +47,82 @@ public class MainActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        listview = (ListView) findViewById(android.R.id.list);
 
         for(int i=0; i<mPlaces.length; i++){
             HashMap<String,String> item = new HashMap<String,String>();
             item.put( "food", mFoods[i]);
             item.put( "place",mPlaces[i] );
-            list.add( item );
+            data_list.add( item );
         }
 
-        adapter = new SimpleAdapter(
-                this,
-                list,
-                android.R.layout.simple_list_item_2,
-                new String[] { "food","place" },
-                new int[] { android.R.id.text1, android.R.id.text2 } );
-
-        setListAdapter(adapter);
+//        adapter = new SimpleAdapter(
+//                this,
+//                list,
+//                android.R.layout.simple_list_item_2,
+//                new String[] { "food","place" },
+//                new int[] { android.R.id.text1, android.R.id.text2 } );
+//
+//        setListAdapter(adapter);
+        adapter = new YourAdapter(this, data_list);
+        listview.setAdapter(adapter);
     }
+
+
+    class YourAdapter extends BaseAdapter {
+
+        Context context;
+        ArrayList<HashMap<String,String>> data;
+        private LayoutInflater inflater = null;
+
+        public YourAdapter(Context context, ArrayList<HashMap<String,String>> data) {
+            // TODO Auto-generated constructor stub
+            this.context = context;
+            this.data = data;
+//                inflater = (LayoutInflater) context
+//                        .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+            inflater = LayoutInflater.from(context);
+        }
+
+        @Override
+        public int getCount() {
+            // TODO Auto-generated method stub
+            return data.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            // TODO Auto-generated method stub
+            return data.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            // TODO Auto-generated method stub
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            // TODO Auto-generated method stub
+            View vi = convertView;
+            if (vi == null)
+                vi = inflater.inflate(R.layout.item_view, null);
+            TextView text = (TextView) vi.findViewById(R.id.detailed_textView);
+            text.setText(data_list.get(position).get("place"));
+            TextView text2 = (TextView) vi.findViewById(R.id.detailed_textView2);
+            text2.setText(data_list.get(position).get("food"));
+            return vi;
+        }
+    }
+
+
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
 
-//        Object o = l.getItemAtPosition(position);
         HashMap<String,String> o = (HashMap<String,String>)l.getItemAtPosition(position);
         String food = o.get("food").toString();
         String place = o.get("place").toString();
@@ -80,3 +140,4 @@ public class MainActivity extends ListActivity {
 
     };
 }
+
