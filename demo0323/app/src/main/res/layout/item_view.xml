@@ -8,7 +8,7 @@
     >
 
     <ImageView
-    android:id="@+id/img_in_list_s"
+    android:id="@+id/item_img"
     android:layout_width="50dp"
     android:layout_height="50dp"
     android:src="@drawable/default_pic"
@@ -21,7 +21,7 @@
         android:orientation="vertical"
         >
     <TextView
-        android:id="@+id/detailed_textView"
+        android:id="@+id/item_textView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -29,7 +29,7 @@
         android:textSize="12dp" />
 
     <TextView
-        android:id="@+id/detailed_textView2"
+        android:id="@+id/item_textView2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="TextView"

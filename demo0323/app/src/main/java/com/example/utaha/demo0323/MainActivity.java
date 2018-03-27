@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.app.ListActivity;
 //import android.widget.ArrayAdapter;
 //import android.widget.ListAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.view.View;
 import java.util.HashMap;
@@ -28,19 +29,20 @@ public class MainActivity extends ListActivity {
     ListView listview;
 
     private static final String[] mPlaces = new String[] {
-            "台北市", "新北市", "台南市", "高雄市", "苗粟縣",
-            "台北市", "新北市", "台南市", "高雄市", "苗粟縣",
-            "台北市", "新北市", "台南市", "高雄市", "苗粟縣",
-            "台北市", "新北市", "台南市", "高雄市", "苗粟縣",
-            "台北市", "新北市", "台南市", "高雄市", "苗粟縣"
+            "彰化鹿港", "彰化", "台中", "台北", "高雄",
+
     };
 
     private static final String[] mFoods = new String[] {
-            "大餅包小餅", "蚵仔煎", "東山鴨頭", "臭豆腐", "潤餅",
-            "豆花", "青蛙下蛋","豬血糕", "大腸包小腸", "鹹水雞",
-            "烤香腸","車輪餅","珍珠奶茶","鹹酥雞","大熱狗",
-            "炸雞排","山豬肉","花生冰","剉冰","水果冰",
-            "包心粉圓","排骨酥","沙茶魷魚","章魚燒","度小月"
+            "蚵仔煎","肉圓","滷肉飯","大腸麵線","芒果冰",
+    };
+
+    private static final String[] mFoods_img = new String[] {
+            String.valueOf(R.drawable.p1),
+            String.valueOf(R.drawable.p2),
+            String.valueOf(R.drawable.p3),
+            String.valueOf(R.drawable.p4),
+            String.valueOf(R.drawable.p5)
     };
 
     @Override
@@ -53,6 +55,7 @@ public class MainActivity extends ListActivity {
             HashMap<String,String> item = new HashMap<String,String>();
             item.put( "food", mFoods[i]);
             item.put( "place",mPlaces[i] );
+            item.put("mFoods_img",mFoods_img[i]);
             data_list.add( item );
         }
 
@@ -65,6 +68,7 @@ public class MainActivity extends ListActivity {
 //
 //        setListAdapter(adapter);
         adapter = new YourAdapter(this, data_list);
+
         listview.setAdapter(adapter);
     }
 
@@ -109,10 +113,12 @@ public class MainActivity extends ListActivity {
             View vi = convertView;
             if (vi == null)
                 vi = inflater.inflate(R.layout.item_view, null);
-            TextView text = (TextView) vi.findViewById(R.id.detailed_textView);
+            TextView text = (TextView) vi.findViewById(R.id.item_textView);
             text.setText(data_list.get(position).get("place"));
-            TextView text2 = (TextView) vi.findViewById(R.id.detailed_textView2);
+            TextView text2 = (TextView) vi.findViewById(R.id.item_textView2);
             text2.setText(data_list.get(position).get("food"));
+            ImageView img = (ImageView) vi.findViewById(R.id.item_img);
+            img.setImageResource(Integer.parseInt(data_list.get(position).get("mFoods_img")));
             return vi;
         }
     }
@@ -126,6 +132,7 @@ public class MainActivity extends ListActivity {
         HashMap<String,String> o = (HashMap<String,String>)l.getItemAtPosition(position);
         String food = o.get("food").toString();
         String place = o.get("place").toString();
+        String mFoods_img = o.get("mFoods_img").toString();
 
 //        Toast.makeText(getApplicationContext(), "You have chosen: " + " " +
 //                click_item, Toast.LENGTH_LONG).show();
@@ -134,6 +141,7 @@ public class MainActivity extends ListActivity {
         Intent intent1 = new Intent(v.getContext(), DetailedActivity.class);
         intent1.putExtra("food", food);
         intent1.putExtra("place", place);
+        intent1.putExtra("mFoods_img",mFoods_img);
         startActivityForResult(intent1,0);
 
 
